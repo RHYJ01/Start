@@ -14,15 +14,14 @@ int main(void)
 	while(1)
 	{ 
 	
-		if ( !(PINB & (1<<PINB7) )) 
-		{
+		
 			test++;
 
-		}
+		
 		
 		PORTB=test;	
 
-		//for(x=0;x<60000;x++);//zuerst auf 6000 zählen und dan +1
+		for(x=0;x<60000;x++);//zuerst auf 6000 zählen und dan +1
 	
 		
 	} //end while
